@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>druppel.io</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+      /* Gruvbox Color Palette (Adjust as needed) */
+      :root {
+          --bg: #282828; /* Darker background */
+          --fg: #ebdbb2; /* Lighter foreground */
+          --gray: #928374; /* Gray for sidebar, etc. */
+          --accent1: #fb4934; /* Red accent */
+          --accent2: #b8bb26; /* Yellow accent */
+          --accent3: #83a598; /* Teal accent */
+      }
+
+      body {
+          background-color: var(--bg);
+          color: var(--fg);
+      }
+
+      .sidebar {
+          background-color: var(--gray);
+      }
+
+      .nav {
+          background-color: rgba(var(--gray), 0.8); /* Semi-transparent nav */
+      }
+
+      /* Example Icon Styling (replace with your icons) */
+      .icon {
+          width: 20px;
+          height: 20px;
+          fill: var(--fg); /* Or use a specific accent color */
+      }
+
+      /* Basic Responsive adjustments */
+      @media (max-width: 768px) {
+          .sidebar {
+              display: none; /* Hide sidebar on smaller screens */
+          }
+          .nav {
+              flex-direction: column; /* Stack navigation vertically */
+          }
+          .nav-item {
+              margin: 0.5rem 0; /* Adjust spacing for vertical nav */
+          }
+
+      }
+  </style>
+</head>
+  <body class="font-sans">
+    <div class="flex min-h-screen">
+      <main class="flex-1 p-6">
+        <h1 class="text-3xl font-bold mb-4">Main Content Area</h1>
+        <p class="prose">
+          This is where your main content goes. You can use Tailwind's utility classes to style it further.  The `prose` class adds sensible default styling for typography.  Remember to replace this placeholder text with your own content.
+        </p>
+      </main>
+    </div>
+
+    <svg style="display: none;">
+      <symbol id="home-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></symbol>
+      <symbol id="user-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></symbol>
+      <symbol id="settings-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 00.33-1.82l-3-3.42a1.65 1.65 0 01-.21-.92l-.84-1.45a1.65 1.65 0 00-2.77-.56l-2.44 2.44a1.65 1.65 0 01-.35 2.12l-1.4-1.4a1.65 1.65 0 00-2.12-.35l2.44-2.44a1.65 1.65 0 01-.56-2.77l-1.45-.84a1.65 1.65 0 00-.92-.21l-3.42 3a1.65 1.65 0 00-1.82.33l-1.46 1.46a1.65 1.65 0 01-.56 2.77l2.44 2.44a1.65 1.65 0 002.12.35l1.4 1.4a1.65 1.65 0 01.35 2.12l-2.44 2.44a1.65 1.65 0 00.56 2.77l1.45.84a1.65 1.65 0 01.92.21l3.42-3a1.65 1.65 0 011.82-.33l1.46-1.46a1.65 1.65 0 00.56-2.77l-2.44-2.44a1.65 1.65 0 01.35-2.12l1.4-1.4a1.65 1.65 0 002.12-.35l-2.44-2.44a1.65 1.65 0 01.56-2.77l1.45-.84a1.65 1.65 0 01.92-.21l3.42 3a1.65 1.65 0 011.82.33l1.46 1.46a1.65 1.65 0 00.56 2.77l-2.44 2.44a1.65 1.65 0 012.12.35l1.4 1.4a1.65 1.65 0 01.35 2.12l-2.44 2.44a1.65 1.65 0 00.56 2.77l1.45-.84a1.65 1.65 0 01.92-.21l3.42 3a1.65 1.65 0 011.82.33z"></path></symbol>
+    </svg>
+  </body>
+</html>
