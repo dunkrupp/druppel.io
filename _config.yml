@@ -22,13 +22,16 @@ title: druppel.io
 email: me@druppel.io
 description: >- # this means to ignore newlines until "baseurl:"
   My name is Drew Ruppel, a senior software engineer with over a decade of experience in architecture and design.
-baseurl: "/"
+baseurl: ""
 url: "https://druppel.io" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  dunkrupp
 
 # Build settings
+sass:
+  style: compressed
 theme: minima
 plugins:
+  - jekyll-coffeescript
   - jekyll-feed
 
 # Exclude from processing.
