@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Drew Ruppel - Sr. Software Engineer. Explore my resume, and connect on GitHub and LinkedIn.">
+  <title>druppel.io</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/tailwind.css">
+  <link rel="stylesheet" href="/assets/css/custom.css">
+  <link rel="icon" type="image/png" href="/assets/img/favicon-96x96.png" sizes="96x96" />
+  <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
+  <link rel="shortcut icon" href="/assets/img/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/img/apple-touch-icon.png" />
+  <meta name="apple-mobile-web-app-title" content="druppel.io" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.min.js"></script>
+</head>
+<body id="body" class="lato-regular antialiased">
+  <header>
+    <nav>
+      <a href="https://github.com/dunkrupp" target="_blank" class="nav-link">GitHub</a>
+      <a href="https://www.linkedin.com/in/drewruppel" target="_blank" class="nav-link">LinkedIn</a>
+      <a href="/resume.html" class="nav-link">Resume</a>
+      <a href="mailto:me@druppel.io" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div>
+      <h1 class="mb-1">Drew Ruppel</h1>
+      <h2>Senior Software Engineer</h2>
+    </div>
+  </main>
+
+  <footer>
+    <script src="/assets/js/index.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        // Get the current URL path
+        const path = window.location.pathname;
+
+        // List of your known existing page paths (adjust this to your site's structure)
+        const existingPages = [
+          '/',
+          '/index.html',
+          '/about/',
+          '/contact/',
+        ];
+
+        // Check if the current path is NOT in the list of existing pages
+        if (!existingPages.includes(path) && path !== '/404.html') {
+          // Redirect to your custom 404 page
+          // window.location.href = '/404.html';
+          console.warn('Redirecting to 404.html')
+        }
+      });
+    </script>
+  </footer>
+</body>
+</html>
+
